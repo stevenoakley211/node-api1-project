@@ -1,10 +1,11 @@
 const express = require('express'); 
 const shortid = require('shortid')
-
+const cors = require('cors')
 const server = express(); // creates the server
 
-server.use(express.json()) // converts requests to json.
 
+server.use(express.json()) // converts requests to json.
+server.use(cors())
 const users= [
     {
         id: 1, // hint: use the shortid npm package to generate it
