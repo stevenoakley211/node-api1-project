@@ -93,7 +93,7 @@ server.put("/api/users/:id", (req,res)=>{
     }
 })
 
-// watch for connections on port 5000
-server.listen(5000, () =>
-  console.log('Server running on http://localhost:5000')
+// watch for connections on port 4000
+server.listen(4000, () =>
+  console.log('Server running on http://localhost:4000')
 );
