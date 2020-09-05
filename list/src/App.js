@@ -10,7 +10,7 @@ function App() {
   
   const getUserList = () =>{
     axios
-      .get("http://localhost:5000/api/users")
+      .get("http://localhost:4000/api/users")
       .then(res =>{
         console.log(res)
         setUserlist(res.data)

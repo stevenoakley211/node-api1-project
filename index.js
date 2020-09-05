@@ -23,7 +23,7 @@ server.post("/api/users", (req,res) =>{
         ...req.body
     }
     // if no name is supplied send error
-    if (user.name || user.bio === undefined){
+    if (!user.name || !user.bio){
         res.status(400).json({errorMessage:"please provide name and bio"})
     }
     else if (user.name && user.bio){
